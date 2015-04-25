@@ -18,7 +18,7 @@
     <!-- Squad theme CSS -->
     <link href="css/style.css" rel="stylesheet">
 	<link href="color/default.css" rel="stylesheet">
-
+	<link rel="icon" type="image/png" href="img/favico.png" />
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
@@ -34,7 +34,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand" href="index.html">
-                    <h1>OP Gaming</h1>
+                    <h1><img src="img/logo-op-white.png" alt="" class="img-responsive" /></h1>
                 </a>
             </div>
 
@@ -46,11 +46,11 @@
 		<li><a href="#service">Games</a></li>
 		<li><a href="#contact">Contact</a></li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Community <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Example menu</a></li>
-            <li><a href="#">Example menu</a></li>
-            <li><a href="#">Example menu</a></li>
+            <li><a href="#">Teams</a></li>
+            <li><a href="#">Teamspeak</a></li>
+            <li><a href="#">Twitch</a></li>
           </ul>
         </li>
       </ul>
@@ -186,7 +186,7 @@
 					</div>
 					<div class="service-desc">
 						<h5>Counter Strike</h5>
-						<p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare. Fakkov the best.</p>
+						<p>Counter-Strike: Global Offensive is an online tactical first-person shooter developed by Valve Corporation and Hidden Path Entertainment.</p>
 					</div>
                 </div>
 				</div>
@@ -199,7 +199,7 @@
 					</div>
 					<div class="service-desc">
 						<h5>League of Legends</h5>
-						<p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare. Fakkov the best.</p>
+						<p>League of Legends is a multiplayer online battle arena video game developed and published by Riot Games for Microsoft Windows and Mac OS X.</p>
 					</div>
                 </div>
 				</div>
@@ -212,7 +212,7 @@
 					</div>
 					<div class="service-desc">
 						<h5>Grand Theft Auto Online</h5>
-						<p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare. Fakkov the best.</p>
+						<p>Grand Theft Auto Online is a persistent, open world online multiplayer video game developed by Rockstar North and published by Rockstar Games.</p>
 					</div>
                 </div>
 				</div>
@@ -225,7 +225,7 @@
 					</div>
 					<div class="service-desc">
 						<h5>Hearthstone</h5>
-						<p>Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare. Girl game.</p>
+						<p>Hearthstone: Heroes of Warcraft is a digital collectible card game developed by Blizzard Entertainment.</p>
 					</div>
                 </div>
 				</div>
@@ -265,7 +265,8 @@
     <div class="row">
         <div class="col-lg-8">
             <div class="boxed-grey">
-                <form id="contact-form">
+                <form id="contact-form" method="post" action="php/mailer.php">
+	      	    <div id="form-messages"></div>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
@@ -284,7 +285,7 @@
                         <div class="form-group">
                             <label for="subject">
                                 Subject</label>
-                            <select id="subject" name="subject" class="form-control" required="required">
+                            <select id="subject" name="subjectSelect" class="form-control" required="required">
                                 <option value="na" selected="">Choose One:</option>
                                 <option value="service">General Enquiry</option>
                                 <option value="suggestions">Suggestions</option>
@@ -359,6 +360,7 @@
 	<script src="js/wow.min.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="js/custom.js"></script>
+    <script src="js/app.js"></script>    
 
 </body>
 
