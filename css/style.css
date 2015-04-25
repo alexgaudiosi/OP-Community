@@ -309,7 +309,7 @@ hr {
 }
 
 #intro.intro {
-	padding:20% 0 0 0;
+	padding:5% 0 0 0;
 }
 
 .intro .slogan {
@@ -428,6 +428,10 @@ hr {
 .service-icon {
 	margin-bottom: 20px;
 }	
+
+.service-icon img {
+	margin: 0 auto;
+}
 
 
 
